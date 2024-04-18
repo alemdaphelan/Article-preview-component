@@ -1,0 +1,30 @@
+@media (max-width: 500px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 300px;
+    }
+
+    .content {
+        padding-top: 0;
+    }
+
+    button {
+        z-index: 1;
+    }
+
+    .share-container {
+        position: absolute;
+        z-index: 0;
+    }
+
+    .share-container::before {
+        display: none;
+    }
+}
